@@ -1,0 +1,488 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+
+html{
+    font-size: 62.5%
+}
+
+body{
+    color: #222;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.6rem;
+}
+
+
+.text-center{
+    text-align: center;
+
+}
+
+a {
+    text-decoration:none; 
+}
+
+/* ---------------------
+   ここからhero imgエリア
+ * -------------------- */
+.hero-image{
+    position: relative;
+}
+
+.hero-image-item{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.site-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    letter-spacing: 0.1em;
+}
+
+.site-maintitle{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #222222;
+}
+
+.site-subtitle{
+    margin: 30px 0;
+    font-size: 3.6rem;
+    color: #222222;
+}
+
+
+/* ---------------------
+   ここからnavエリア
+ * -------------------- */
+.wrapper{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header{
+    background-color: #fff;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.img-logo{
+    width: 100px;
+    height: auto;
+}
+
+.nav-item{
+    margin: 30px 30px 30px 30px;
+    font-size: 2.1rem;
+}
+
+.nav-item>a{
+    color: #222222;
+    text-transform: uppercase;
+}
+
+/* ---------------------
+   ここからaboutエリア
+ * -------------------- */
+.about{
+    padding: 60px 0;
+}
+
+.about__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+}
+
+.about__subtitle{
+    margin: 0 0 30px;
+    font-size: 1.8rem;
+    color: #222222;
+}
+
+.about__detail{
+    margin: 0 0 40px;
+    font-size: 1.6rem;
+    color: #222222;
+    line-height: 2;
+}
+
+.about-img{
+    width: 600px;
+    height: auto;
+}
+
+
+/* ---------------------
+   ここからnewsエリア
+ * -------------------- */
+ .news{
+     padding: 0 0 60px;
+ }
+ 
+.news__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+}
+
+.news__subtitle{
+    margin: 0 0 30px;
+    font-size: 1.8rem;
+    color: #222222;
+}
+
+.news-list{
+    display: flex;
+    justify-content: center;
+
+}
+
+.news__item{
+    width: 300px;
+    height: auto;
+    padding: 0 30px 30px 30px;
+}
+
+.news-text{
+    text-align: left;
+    color: #222222;
+}
+
+.news-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+ /*ここからimg*/
+ /*ホバー有り状態のスタイル*/
+ .news-img:hover{
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+
+ /*ここからbtn*/
+ /*ホバー無し状態のスタイル*/
+ .btn{
+     display: block;
+     width: 300px;
+     margin: auto;
+     padding: 21px 0;
+     background-color: #ffd61a;
+     font-size: 1.8rem;
+     color: #fff;
+     text-align: center;
+
+ }
+ /*-------------------*/
+
+
+ /*ホバー有り状態のスタイル*/
+ .btn:hover{
+    background-color: #222222;
+    color: #fff;
+}
+
+/*-------------------*/
+ 
+
+/* ---------------------
+   ここからitemエリア
+ * -------------------- */
+.item{
+    padding: 0 0 30px;
+}
+
+.item__title{
+   margin: 0 0 30px;
+   font-size: 2.4rem;
+   font-weight: bold;
+   color: #ffd61a;
+}
+
+.item__subtitle{
+   margin: 0 0 30px;
+   font-size: 1.8rem;
+   color: #222222;
+}
+
+
+   /*スライドショーの設定*/
+
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:98%;
+    margin:0 auto;
+ }
+ 
+ .slider img {
+     width:100%;/*スライダー内の画像を横幅100%に*/
+     height: auto;
+
+ }
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+ .slider .slick-slide {
+     margin:0 10px;
+ }
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+     position: absolute;/*絶対配置にする*/
+     top: 42%;
+     cursor: pointer;/*マウスカーソルを指マークに*/
+     outline: none;/*クリックをしたら出てくる枠線を消す*/
+     border-top: 2px solid #666;/*矢印の色*/
+     border-right: 2px solid #666;/*矢印の色*/
+     height: 15px;
+     width: 15px;
+ }
+ 
+ .slick-prev {/*戻る矢印の位置と形状*/
+     left: -1.5%;
+     transform: rotate(-135deg);
+ }
+ 
+ .slick-next {/*次へ矢印の位置と形状*/
+     right: -1.5%;
+     transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ .slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:100%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+ 
+ 
+ /*========= レイアウトのためのCSS ===============*/
+  
+ .slider{
+   margin:0;
+   padding: 0;
+   list-style: none;
+ }
+ 
+
+ a:hover,
+ a:active{
+   text-decoration: none;
+ }
+
+
+/* ---------------------
+   ここからinstaエリア
+ * -------------------- */
+ .insta{
+    padding: 0 0 30px;
+}
+
+.insta__title{
+   margin: 30px 0 30px;
+   font-size: 2.4rem;
+   font-weight: bold;
+   color: #ffd61a;
+}
+
+.insta__subtitle{
+   margin: 0 0 30px;
+   font-size: 1.8rem;
+   color: #222222;
+}
+
+/* インスタのcss */
+.insta_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 3vw 0 2vw;
+}
+ 
+.insta_list img{
+    width: 13vw;
+    padding: 0 .25vw;
+}
+
+ 
+/* ---------------------
+   ここからformエリア
+ * -------------------- */
+.form-wrapper{
+    max-width: 640px;
+    margin: auto;
+
+}
+
+.contact__title{
+    margin: 30px 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+ }
+
+ .contact__subtitle{
+    margin: 0 0 30px;
+    font-size: 1.8rem;
+    color: #222222;
+ }
+
+ .contact__text1{
+    margin: 0 0 30px;
+    font-size: 1.6rem;
+    color: #222222;
+    line-height: 2;
+ }
+
+ .contact__text2{
+    margin: 0 0 70px;
+    font-size: 1.6rem;
+    color: #222222;
+    line-height: 2;
+ }
+
+
+  /* ---------------------
+     ここからformの内容
+ * -------------------- */
+ .formbox{
+    width: 600px;
+
+}
+
+.form-dl {
+    background-color:#fff;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+
+}
+
+.form-dt {
+    background-color: #f8f8f8;
+    border-right: 1px solid #ccc;
+    padding: 20px 15px;
+    width: 30%;
+}
+
+.form-dd {
+    background-color:#fff;
+    padding: 20px 15px;
+    width: 70%;
+
+  }
+
+.form-parts{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 0 8px 8px;
+    border: solid 1px #bfbfbf;
+    font-size: 1.6rem;
+
+}
+
+.form-dd>label{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0 0 24px;
+    width: 100%;
+
+}
+
+.btn-submit{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    
+}
+
+.btn2{
+    margin: 30px 0 140px 0;
+}
+
+
+/* ---------------------
+   ここからfooterエリア
+ * -------------------- */
+ .footer{
+     background-color: #707070;
+     padding: 30px 0;
+ }
+
+.footer .wrapper{
+    position: relative;
+}
+
+.btn-pagetop{
+    position: absolute;
+    top: -78px;
+    right: 0;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #707070;
+
+}
+
+ .copyrights{
+     color: #fff;
+ }
+
+ .icon-up{
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 2.4rem;
+ }
+
